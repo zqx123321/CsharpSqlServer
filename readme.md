@@ -1,149 +1,154 @@
-## <center>C#Á¬½ÓSQL Server</center>
+ï»¿## <center>C#è¿æ¥SQL Server</center>
 
-#### 1.ÅäÖÃÁ¬½Ó×Ö·û´®
->ÎªÊ²Ã´ĞèÒªÁ¬½Ó×Ö·û´®£¿  
+#### 1.é…ç½®è¿æ¥å­—ç¬¦ä¸²
+>ä¸ºä»€ä¹ˆéœ€è¦è¿æ¥å­—ç¬¦ä¸²ï¼Ÿ  
 
-C#ÖĞµÄADO.NETÀà¿âÎª²»Í¬µÄÍâ²¿Êı¾İÔ´Ìá¹©ÁËÒ»ÖÂµÄ·ÃÎÊ·½·¨£¬ÕâĞ©Êı¾İÔ´¿ÉÒÔÊÇ±¾µØµÄÊı¾İÎÄ¼ş£¨Èçexcel¡¢txt¡¢access£¬ÉõÖÁÊÇSQLite£©£¬Ò²¿ÉÒÔÊÇÔ¶³ÌµÄÊı¾İ¿â·şÎñÆ÷£¨ÈçSQL Server¡¢MySQL¡¢DB2¡¢OracleµÈ£©¡£Êı¾İÔ´ËÆºõÁÕÀÅÂúÄ¿£¬ÓãÁú»ìÔÓ¡£ÇëÊÔÏëÒ»ÏÂ£¬ADO.NETÈçºÎÄÜ¹»×¼È·¶øÓÖ¸ßĞ§µÄ·ÃÎÊµ½²»Í¬Êı¾İÔ´ÄØ£¿Á¬½Ó×Ö·û´®£¬¾ÍÊÇÕâÑùÒ»×é±»¸ñÊ½»¯µÄ¼üÖµ¶Ô£ºËü¸æËßADO.NETÊı¾İÔ´ÔÚÄÄÀï£¬ĞèÒªÊ²Ã´ÑùµÄÊı¾İ¸ñÊ½£¬Ìá¹©Ê²Ã´ÑùµÄ·ÃÎÊĞÅÈÎ¼¶±ğÒÔ¼°ÆäËûÈÎºÎ°üÀ¨Á¬½ÓµÄÏà¹ØĞÅÏ¢¡£  
->Á¬½Ó×Ö·û´®ÓÉÒ»×éÔªËØ×é³É£¬Ò»¸öÔªËØ°üº¬Ò»¸ö¼üÖµ¶Ô£¬ÔªËØÖ®¼äÓÉ¡°;¡±·Ö¿ª¡£Óï·¨ÈçÏÂ£º  
+C#ä¸­çš„ADO.NETç±»åº“ä¸ºä¸åŒçš„å¤–éƒ¨æ•°æ®æºæä¾›äº†ä¸€è‡´çš„è®¿é—®æ–¹æ³•ï¼Œè¿™äº›æ•°æ®æºå¯ä»¥æ˜¯æœ¬åœ°çš„æ•°æ®æ–‡ä»¶ï¼ˆå¦‚excelã€txtã€accessï¼Œç”šè‡³æ˜¯SQLiteï¼‰ï¼Œä¹Ÿå¯ä»¥æ˜¯è¿œç¨‹çš„æ•°æ®åº“æœåŠ¡å™¨ï¼ˆå¦‚SQL Serverã€MySQLã€DB2ã€Oracleç­‰ï¼‰ã€‚æ•°æ®æºä¼¼ä¹ç³ç…æ»¡ç›®ï¼Œé±¼é¾™æ··æ‚ï¼Œè¯·è¯•æƒ³ä¸€ä¸‹ï¼ŒADO.NETå¦‚ä½•èƒ½å¤Ÿå‡†ç¡®è€Œåˆé«˜æ•ˆçš„è®¿é—®åˆ°ä¸åŒæ•°æ®æºå‘¢ï¼Ÿè¿æ¥å­—ç¬¦ä¸²ï¼Œå°±æ˜¯è¿™æ ·ä¸€ç»„è¢«æ ¼å¼åŒ–çš„é”®å€¼å¯¹ï¼šå®ƒå‘Šè¯‰ADO.NETæ•°æ®æºåœ¨å“ªé‡Œï¼Œéœ€è¦ä»€ä¹ˆæ ·çš„æ•°æ®æ ¼å¼ï¼Œæä¾›ä»€ä¹ˆæ ·çš„è®¿é—®ä¿¡ä»»çº§åˆ«ä»¥åŠå…¶ä»–ä»»ä½•åŒ…æ‹¬è¿æ¥çš„ç›¸å…³ä¿¡æ¯ã€‚  
+>è¿æ¥å­—ç¬¦ä¸²ç”±ä¸€ç»„å…ƒç´ ç»„æˆï¼Œä¸€ä¸ªå…ƒç´ åŒ…å«ä¸€ä¸ªé”®å€¼å¯¹ï¼Œå…ƒç´ ä¹‹é—´ç”±â€œ;â€åˆ†å¼€ã€‚è¯­æ³•å¦‚ä¸‹ï¼š  
 
 ```
 key1=value1;key2=value2;key3=value3...
 ```
 
->SQL Server³£ÓÃÁ¬½Ó×Ö·û´®²ÎÊıËµÃ÷
+>SQL Serverå¸¸ç”¨è¿æ¥å­—ç¬¦ä¸²å‚æ•°è¯´æ˜
 
-| ²ÎÊı | ËµÃ÷     |
+| å‚æ•° | è¯´æ˜     |
 | :------------- | :------------- |
-|  Server »ò Data Source      | ÒªÁ¬½ÓµÄÊı¾İ¿âÊµÀıµÄÃû³Æ»òÍøÂçµØÖ·,Ò²¾ÍÊÇµÇÂ¼SQL ServerÊ±µÄ·şÎñÆ÷µØÖ·£¬Ö¸¶¨±¾µØÊµÀı¿ÉÓÃ(Local)»òÕß±¾»úIPµØÖ·£¬»òÕß¸É´àÒ»¸ö. |
-| Initial Catalog »ò Database   | Êı¾İ¿âµÄÃû³Æ£¬Ò²¾ÍÊÇÊ¹ÓÃÄÄ¸öÊı¾İ¿â |
-| Integrated Security »ò Trusted_Connection   | Ö¸¶¨ÊÇWindowsÉí·İÑéÖ¤£¬»¹ÊÇSQL ServerÉí·İÑéÖ¤£¬ÖµÎªtrueÊ±£¬±íÊ¾WindowsÉí·İÑéÖ¤£¬false±íÊ¾SQL ServerÉí·İÑéÖ¤£¬Ä¬ÈÏfalse |
-|User ID »ò UID   |   Ê¹ÓÃSQL ServerÉí·İÑéÖ¤Ê±µÄµÇÂ¼ÓÃ»§Ãû|
-|Password »ò Pwd   | Ê¹ÓÃSQL ServerÉí·İÑéÖ¤Ê±µÄµÇÂ¼ÃÜÂë  |
+|  Server æˆ– Data Source      | è¦è¿æ¥çš„æ•°æ®åº“å®ä¾‹çš„åç§°æˆ–ç½‘ç»œåœ°å€,ä¹Ÿå°±æ˜¯ç™»å½•SQL Serveræ—¶çš„æœåŠ¡å™¨åœ°å€ï¼ŒæŒ‡å®šæœ¬åœ°å®ä¾‹å¯ç”¨(Local)æˆ–è€…æœ¬æœºIPåœ°å€ï¼Œæˆ–è€…å¹²è„†ä¸€ä¸ª. |
+| Initial Catalog æˆ– Database   | æ•°æ®åº“çš„åç§°ï¼Œä¹Ÿå°±æ˜¯ä½¿ç”¨å“ªä¸ªæ•°æ®åº“ |
+| Integrated Security æˆ– Trusted_Connection   | æŒ‡å®šæ˜¯Windowsèº«ä»½éªŒè¯ï¼Œè¿˜æ˜¯SQL Serverèº«ä»½éªŒè¯ï¼Œå€¼ä¸ºtrueæ—¶ï¼Œè¡¨ç¤ºWindowsèº«ä»½éªŒè¯ï¼Œfalseè¡¨ç¤ºSQL Serverèº«ä»½éªŒè¯ï¼Œé»˜è®¤false |
+|User ID æˆ– UID   |   ä½¿ç”¨SQL Serverèº«ä»½éªŒè¯æ—¶çš„ç™»å½•ç”¨æˆ·å|
+|Password æˆ– Pwd   | ä½¿ç”¨SQL Serverèº«ä»½éªŒè¯æ—¶çš„ç™»å½•å¯†ç   |
 
->SQL Server³£ÓÃÁ¬½Ó×Ö·û´®¾ÙÀı
+>SQL Serverå¸¸ç”¨è¿æ¥å­—ç¬¦ä¸²ä¸¾ä¾‹
 
 ```
-windowsÉí·İÑéÖ¤
-"Data Source=.;Initial Catalog=Êı¾İ¿â;Integrated Security=True"
+windowsèº«ä»½éªŒè¯
+"Data Source=.;Initial Catalog=æ•°æ®åº“;Integrated Security=True"
 
-SQL ServerÉí·İÑéÖ¤(sa)£º     
-"Data Source=.;Initial Catalog=Êı¾İ¿â;User ID=sa,pwd=;"
+SQL Serverèº«ä»½éªŒè¯(sa)ï¼š     
+"Data Source=.;Initial Catalog=æ•°æ®åº“;User ID=sa,pwd=;"
 ```
->PSÊ¹ÓÃSQL ServerÉí·İÑéÖ¤ĞèÒªÉèÖÃsaµÇÂ¼ÃÜÂë£¬²¢¸³ÓèsaÕËºÅÈ¨ÏŞ£¬Á¬½ÓÔ¶³Ì·şÎñÆ÷ÖĞµÄSQL ServerÊ±±ØĞëÊ¹ÓÃSQL ServerÉí·İÑéÖ¤£¬ÇÒ¿ªÆôTCPÁ¬½Ó
+>PSï¼šä½¿ç”¨SQL Serverèº«ä»½éªŒè¯éœ€è¦è®¾ç½®saç™»å½•å¯†ç ï¼Œå¹¶èµ‹äºˆsaè´¦å·æƒé™ï¼Œè¿æ¥è¿œç¨‹æœåŠ¡å™¨ä¸­çš„SQL Serveræ—¶å¿…é¡»ä½¿ç”¨SQL Serverèº«ä»½éªŒè¯ï¼Œä¸”å¼€å¯TCPè¿æ¥
 
 
-#### 2.Ê¹ÓÃC#Á¬½ÓSQL Server
+#### 2.ä½¿ç”¨C#è¿æ¥SQL Server
 
 
->SQL ServerºÍC#ÊÇÒ»¼ÒÈË£¬ËùÎ½½üË®Â¥Ì¨ÏÈµÃÔÂ£¬Òò´ËC#Á¬½ÓSQL Server·Ç³£ÈİÒ×£¬Ö»ĞèÒª¼¸ĞĞ´úÂë£º
+>SQL Serverå’ŒC#æ˜¯ä¸€å®¶äººï¼Œæ‰€è°“è¿‘æ°´æ¥¼å°å…ˆå¾—æœˆï¼Œå› æ­¤C#è¿æ¥SQL Serveréå¸¸å®¹æ˜“ï¼Œåªéœ€è¦å‡ è¡Œä»£ç ï¼š
 
 ```C#
-//SqlConnection ¶ÔÏó±íÊ¾Óë SQL Server Êı¾İÔ´µÄÒ»¸öÎ¨Ò»µÄ»á»°¡£¶ÔÓÚ¿Í»§¶Ë/·şÎñÆ÷Êı¾İ¿âÏµÍ³£¬ËüµÈĞ§ÓÚµ½·şÎñÆ÷µÄÍøÂçÁ¬½Ó
-public static string ConnStr = @"server=.;Integrated Security=SSPI;database=restaurant;";//Á¬½Ó×Ö·û´®
-SqlConnection conn = new SqlConnection(ConnStr);//Á¬½ÓÊı¾İ¿â
-conn.Open();//´ò¿ªÊı¾İ¿â
+//SqlConnection å¯¹è±¡è¡¨ç¤ºä¸ SQL Server æ•°æ®æºçš„ä¸€ä¸ªå”¯ä¸€çš„ä¼šè¯ã€‚å¯¹äºå®¢æˆ·ç«¯/æœåŠ¡å™¨æ•°æ®åº“ç³»ç»Ÿï¼Œå®ƒç­‰æ•ˆäºåˆ°æœåŠ¡å™¨çš„ç½‘ç»œè¿æ¥
+public static string ConnStr = @"server=.;Integrated Security=SSPI;database=restaurant;";//è¿æ¥å­—ç¬¦ä¸²
+SqlConnection conn = new SqlConnection(ConnStr);//è¿æ¥æ•°æ®åº“
+conn.Open();//æ‰“å¼€æ•°æ®åº“
 //doSomething
-conn.Close();//¹Ø±ÕÊı¾İ¿â£¬ÊÍ·Å×ÊÔ´
+conn.Close();//å…³é—­æ•°æ®åº“ï¼Œé‡Šæ”¾èµ„æº
 ```
 
-#### 3.Êı¾İ¿â²Ù×÷ÀàSQLHelper·â×°
+#### 3.æ•°æ®åº“æ“ä½œç±»SQLHelperå°è£…
 
->×Ü½áÎÒÃÇµÄĞèÇó£¬ÎŞ·Ç¾ÍÊÇ¶ÔÊı¾İ¿âµÄÔöÉ¾¸Ä²é£¬ÆäÊµÕâËÄÖÖ²Ù×÷¿ÉÒÔ·Ö³ÉÁ½Àà£¬µÚÒ»ÀàÊÇ²éÑ¯£¬ÎÒÃÇÏ£ÍûµÃµ½²éÑ¯µÄÊı¾İ£»µÚ¶şÀàÊÇÔöÉ¾¸Ä£¬ÎÒÃÇÏ£ÍûµÃµ½²Ù×÷µÄÖ´ĞĞÇé¿ö¡£Òò´Ë£¬ÎÒÃÇµÄÍ¨ÓÃÊı¾İ¿â²Ù×÷ÀàÖ»ĞèÒª·â×°Á½¸öº¯Êı¾Í¹»ÁË
+>æ€»ç»“æˆ‘ä»¬çš„éœ€æ±‚ï¼Œæ— éå°±æ˜¯å¯¹æ•°æ®åº“çš„å¢åˆ æ”¹æŸ¥ï¼Œå…¶å®è¿™å››ç§æ“ä½œå¯ä»¥åˆ†æˆä¸¤ç±»ï¼šç¬¬ä¸€ç±»æ˜¯æŸ¥è¯¢ï¼Œæˆ‘ä»¬å¸Œæœ›å¾—åˆ°æŸ¥è¯¢çš„æ•°æ®ï¼›ç¬¬äºŒç±»æ˜¯å¢åˆ æ”¹ï¼Œæˆ‘ä»¬å¸Œæœ›å¾—åˆ°æ“ä½œçš„æ‰§è¡Œæƒ…å†µã€‚å› æ­¤ï¼Œæˆ‘ä»¬çš„é€šç”¨æ•°æ®åº“æ“ä½œç±»åªéœ€è¦å°è£…ä¸¤ä¸ªå‡½æ•°å°±å¤Ÿäº†
 
-1¡¢²éÑ¯²Ù×÷
+1ã€æŸ¥è¯¢æ“ä½œ
 
->ÎÒÃÇ°Ñ²éÑ¯µÄ½á¹û·ÅÔÚC#Êı¾İÈİÆ÷DataTableÖĞ£¬SqlDataAdapterÊÇ DataTableºÍ SQL ServerÖ®¼äµÄÊÊÅäÆ÷£¬ÓÃÓÚÏòDataTableÖĞÌî³äÊı¾İ
+>æˆ‘ä»¬æŠŠæŸ¥è¯¢çš„ç»“æœæ”¾åœ¨C#æ•°æ®å®¹å™¨DataTableä¸­ï¼ŒSqlDataAdapteræ˜¯ DataTableå’Œ SQL Serverä¹‹é—´çš„é€‚é…å™¨ï¼Œç”¨äºå‘DataTableä¸­å¡«å……æ•°æ®
 
 ```C#
 /// <summary>
-/// ²éÑ¯Êı¾İ
+/// æŸ¥è¯¢æ•°æ®
 /// </summary>
-/// <param name="sql">ÓÃÓÚ²éÑ¯µÄSQLÓï¾ä</param>
-/// <returns>Êı¾İ¼¯</returns>
-public DataTable Select(string sql)
+/// <param name="sql">ç”¨äºæŸ¥è¯¢çš„SQLè¯­å¥</param>
+/// <returns>æ•°æ®é›†</returns>
+static public DataTable Select(string sql)
 {
-   using (SqlConnection conn = new SqlConnection(ConnStr))
-   {
-       DataTable dt = new DataTable();
-       {
-           try
-           {
-               conn.Open();//´ò¿ª
-               SqlDataAdapter da = new SqlDataAdapter(sql, conn);
-               da.Fill(dt);//½øĞĞÌî³ä
-           }
-           catch(Exception ex)
-           {
-               Console.WriteLine(ex);
-           }
-       }
-       return dt;
-   }
+    //åˆ›å»ºDataTableå¯¹è±¡
+    DataTable dt = new DataTable();
+    //åˆ›å»ºSqlConnectionå¯¹è±¡ï¼Œåœ¨å…¶æ„é€ å‡½æ•°é‡Œä¼ å…¥è¿æ¥å­—ç¬¦ä¸²
+    SqlConnection conn = new SqlConnection(ConnStr);
+    try
+    {
+        conn.Open();//æ‰“å¼€
+        SqlDataAdapter da = new SqlDataAdapter(sql, conn);
+        da.Fill(dt);//è¿›è¡Œå¡«å……
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine(ex);
+    }
+    finally
+    {
+        conn.Close();//å…³é—­è¿æ¥ï¼Œé‡Šæ”¾èµ„æº
+    }
+    return dt;
 }
 
 ```
-2¡¢ÔöÉ¾¸Ä²Ù×÷
+2ã€å¢åˆ æ”¹æ“ä½œ
 
->sqlcommandÊÇ¶ÔSQL Server²Ù×÷µÄÀà£¬ÆäExecuteNonQuery·½·¨¿ÉÒÔ¶ÔÁ¬½ÓÖ´ĞĞ SQL Óï¾ä²¢·µ»ØÊÜÓ°ÏìµÄĞĞÊı£¬Ö´ĞĞÔöÉ¾¸ÄÊ±£¬·µ»Ø1±íÊ¾²Ù×÷³É¹¦£¬0±íÊ¾²Ù×÷Ê§°Ü
+>sqlcommandæ˜¯å¯¹SQL Serveræ“ä½œçš„ç±»ï¼Œå…¶ExecuteNonQueryæ–¹æ³•å¯ä»¥å¯¹è¿æ¥æ‰§è¡Œ SQL è¯­å¥å¹¶è¿”å›å—å½±å“çš„è¡Œæ•°ï¼Œæ‰§è¡Œå¢åˆ æ”¹æ—¶ï¼Œè¿”å›å¤§äº0çš„æ•°è¡¨ç¤ºæ“ä½œæˆåŠŸï¼Œ0è¡¨ç¤ºæ“ä½œå¤±è´¥
 
 ```C#
 /// <summary>
-/// ÔöÉ¾¸Ä²Ù×÷
+/// å¢åˆ æ”¹æ“ä½œ
 /// </summary>
-/// <param name="sql">ÓÃÓÚÔöÉ¾¸ÄµÄSQLÓï¾ä</param>
+/// <param name="sql">ç”¨äºå¢åˆ æ”¹çš„SQLè¯­å¥</param>
 /// <returns></returns>
 static public int SqlExecute(string sql)
 {
-   using (SqlConnection conn = new SqlConnection(ConnStr))
-   {
-       try
-       {
-           conn.Open();
-           SqlCommand cmd = new SqlCommand(sql, conn);
-           return Convert.ToInt32(cmd.ExecuteNonQuery());//Ö´ĞĞ
-       }
-       catch(Exception ex)
-       {
-           Console.WriteLine(ex);
-           return 0;
-       }
-   }
+    SqlConnection conn = new SqlConnection(ConnStr);
+    try
+    {
+        conn.Open();
+        //åˆ›å»ºSqlCommandå¯¹è±¡ï¼Œåœ¨å…¶æ„é€ å‡½æ•°é‡Œä¼ å…¥SQLè¯­å¥å’Œè¿æ¥å­—ç¬¦ä¸²
+        SqlCommand cmd = new SqlCommand(sql, conn);
+        return Convert.ToInt32(cmd.ExecuteNonQuery());//æ‰§è¡Œ
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine(ex);
+        return 0;
+    }
+    finally
+    {
+        conn.Close();//å…³é—­è¿æ¥ï¼Œé‡Šæ”¾èµ„æº
+    }
 }
 
 ```
 
-3.Ê¹ÓÃÊÂÎñ
+3.ä½¿ç”¨äº‹åŠ¡
 
 ```C#
 /// <summary>
-/// Ö´ĞĞ¶àÌõ²Ù×÷µÄÊÂÎñ
+/// æ‰§è¡Œå¤šæ¡æ“ä½œçš„äº‹åŠ¡
 /// </summary>
-/// <param name="lst">SQLÓï¾ä¼¯</param>
-/// <returns>ÊÂÎñ³É¹¦ÍĞ¸¶·µ»Øtrue,·ñÔò·µ»Øfalse</returns>
+/// <param name="lst">SQLè¯­å¥é›†</param>
+/// <returns>äº‹åŠ¡æˆåŠŸæ‰˜ä»˜è¿”å›true,å¦åˆ™è¿”å›false</returns>
 public bool SqlExecuteTrans(List<String> lst)
 {
     using (SqlConnection conn = new SqlConnection(ConnStr))
     {
         conn.Open();
-        //¿ªÆôÊÂÎñ
+        //å¼€å¯äº‹åŠ¡
         SqlTransaction trans = conn.BeginTransaction();
         SqlCommand cmd = new SqlCommand();
-        cmd.Connection = conn;//Ìí¼ÓÁ´½Ó¹¤¾ß
-        cmd.Transaction = trans;//Ìí¼ÓÊÂÎñ
+        cmd.Connection = conn;//æ·»åŠ é“¾æ¥å·¥å…·
+        cmd.Transaction = trans;//æ·»åŠ äº‹åŠ¡
         try
         {
             for (int i = 0; i < lst.Count; i++)
             {
-                string sql = lst[i].ToString();//»ñÈ¡sqlÓï¾ä
-                cmd.CommandText = sql;//Ìí¼ÓsqlÓï¾ä
-                cmd.ExecuteNonQuery();//Ö´ĞĞ
+                string sql = lst[i].ToString();//è·å–sqlè¯­å¥
+                cmd.CommandText = sql;//æ·»åŠ sqlè¯­å¥
+                cmd.ExecuteNonQuery();//æ‰§è¡Œ
             }
-            trans.Commit();//Ö´ĞĞÍê³ÉÖ®ºóÌá½»
+            trans.Commit();//æ‰§è¡Œå®Œæˆä¹‹åæäº¤
             return true;
         }
         catch (Exception ex)
         {
-            //Ö´ĞĞsqlÓï¾äÊ§°Ü£¬ÊÂÎñ»Ø¹ö
+            //æ‰§è¡Œsqlè¯­å¥å¤±è´¥ï¼Œäº‹åŠ¡å›æ»š
             trans.Rollback();
             Console.WriteLine(ex);
             return false;
@@ -156,7 +161,7 @@ public bool SqlExecuteTrans(List<String> lst)
 }
 ```
 
-#### 4.SQLHelper.csÍêÕû´úÂë
+#### 4.SQLHelper.cså®Œæ•´ä»£ç 
 ``` C#
 using System;
 using System.Collections.Generic;
@@ -168,92 +173,99 @@ using System.Security.Cryptography;
 using System.Text;
 
 /// <summary>
-/// SQLHelper µÄÕªÒªËµÃ÷
+/// SQLHelper çš„æ‘˜è¦è¯´æ˜
 /// </summary>
 public class SQLHelper
 {
     public SQLHelper()
     {
         //
-        // TODO: ÔÚ´Ë´¦Ìí¼Ó¹¹Ôìº¯ÊıÂß¼­
+        // TODO: åœ¨æ­¤å¤„æ·»åŠ æ„é€ å‡½æ•°é€»è¾‘
         //
     }
-    public static string ConnStr = @"server=(localdb)\v11.0;Integrated Security=SSPI;database=restaurant;";
+    public static string ConnStr = @"server=.;Integrated Security=SSPI;database=demo;";
     /// <summary>
-    /// ²éÑ¯Êı¾İ
+    /// æŸ¥è¯¢æ•°æ®
     /// </summary>
-    /// <param name="sql">ÓÃÓÚ²éÑ¯µÄSQLÓï¾ä</param>
-    /// <returns>Êı¾İ¼¯</returns>
+    /// <param name="sql">ç”¨äºæŸ¥è¯¢çš„SQLè¯­å¥</param>
+    /// <returns>æ•°æ®é›†</returns>
     static public DataTable Select(string sql)
     {
-        using (SqlConnection conn = new SqlConnection(ConnStr))
+        //åˆ›å»ºDataTableå¯¹è±¡
+        DataTable dt = new DataTable();
+        //åˆ›å»ºSqlConnectionå¯¹è±¡ï¼Œåœ¨å…¶æ„é€ å‡½æ•°é‡Œä¼ å…¥è¿æ¥å­—ç¬¦ä¸²
+        SqlConnection conn = new SqlConnection(ConnStr);
+        try
         {
-            DataTable dt = new DataTable();
-            try
-            {
-                conn.Open();//´ò¿ª
-                SqlDataAdapter da = new SqlDataAdapter(sql, conn);
-                da.Fill(dt);//½øĞĞÌî³ä
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex);
-            }
-            return dt;
+            conn.Open();//æ‰“å¼€
+            SqlDataAdapter da = new SqlDataAdapter(sql, conn);
+            da.Fill(dt);//è¿›è¡Œå¡«å……
         }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex);
+        }
+        finally
+        {
+            conn.Close();//å…³é—­è¿æ¥ï¼Œé‡Šæ”¾èµ„æº
+        }
+        return dt;
     }
     /// <summary>
-    /// ÔöÉ¾¸Ä²Ù×÷
+    /// å¢åˆ æ”¹æ“ä½œ
     /// </summary>
-    /// <param name="sql">ÓÃÓÚÔöÉ¾¸ÄµÄSQLÓï¾ä</param>
+    /// <param name="sql">ç”¨äºå¢åˆ æ”¹çš„SQLè¯­å¥</param>
     /// <returns></returns>
     static public int SqlExecute(string sql)
     {
-        using (SqlConnection conn = new SqlConnection(ConnStr))
+        SqlConnection conn = new SqlConnection(ConnStr);
+        try
         {
-            try
-            {
-                conn.Open();
-                SqlCommand cmd = new SqlCommand(sql, conn);
-                return Convert.ToInt32(cmd.ExecuteNonQuery());//Ö´ĞĞ
-            }
-            catch(Exception ex)
-            {
-                Console.WriteLine(ex);
-                return 0;
-            }
+            conn.Open();
+            //åˆ›å»ºSqlCommandå¯¹è±¡ï¼Œåœ¨å…¶æ„é€ å‡½æ•°é‡Œä¼ å…¥SQLè¯­å¥å’Œè¿æ¥å­—ç¬¦ä¸²
+            SqlCommand cmd = new SqlCommand(sql, conn);
+            return Convert.ToInt32(cmd.ExecuteNonQuery());//æ‰§è¡Œ
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex);
+            return 0;
+        }
+        finally
+        {
+            conn.Close();//å…³é—­è¿æ¥ï¼Œé‡Šæ”¾èµ„æº
         }
     }
 
     /// <summary>
-    /// Ö´ĞĞ¶àÌõ²Ù×÷µÄÊÂÎñ
+    /// æ‰§è¡Œå¤šæ¡æ“ä½œçš„äº‹åŠ¡
     /// </summary>
-    /// <param name="lst">SQLÓï¾ä¼¯</param>
-    /// <returns>ÊÂÎñ³É¹¦ÍĞ¸¶·µ»Øtrue,·ñÔò·µ»Øfalse</returns>
+    /// <param name="lst">SQLè¯­å¥é›†</param>
+    /// <returns>äº‹åŠ¡æˆåŠŸæ‰˜ä»˜è¿”å›true,å¦åˆ™è¿”å›false</returns>
     public bool SqlExecuteTrans(List<String> lst)
     {
         using (SqlConnection conn = new SqlConnection(ConnStr))
         {
             conn.Open();
-            //¿ªÆôÊÂÎñ
+            //å¼€å¯äº‹åŠ¡
             SqlTransaction trans = conn.BeginTransaction();
             SqlCommand cmd = new SqlCommand();
-            cmd.Connection = conn;//Ìí¼ÓÁ´½Ó¹¤¾ß
-            cmd.Transaction = trans;//Ìí¼ÓÊÂÎñ
+            cmd.Connection = conn;//æ·»åŠ é“¾æ¥å·¥å…·
+            cmd.Transaction = trans;//æ·»åŠ äº‹åŠ¡
             try
             {
                 for (int i = 0; i < lst.Count; i++)
                 {
-                    string sql = lst[i].ToString();//»ñÈ¡sqlÓï¾ä
-                    cmd.CommandText = sql;//Ìí¼ÓsqlÓï¾ä
-                    cmd.ExecuteNonQuery();//Ö´ĞĞ
+                    string sql = lst[i].ToString();//è·å–sqlè¯­å¥
+                    cmd.CommandText = sql;//æ·»åŠ sqlè¯­å¥
+                    cmd.ExecuteNonQuery();//æ‰§è¡Œ
                 }
-                trans.Commit();//Ö´ĞĞÍê³ÉÖ®ºóÌá½»
+                trans.Commit();//æ‰§è¡Œå®Œæˆä¹‹åæäº¤
                 return true;
             }
             catch (Exception ex)
             {
-                //Ö´ĞĞsqlÓï¾äÊ§°Ü£¬ÊÂÎñ»Ø¹ö
+                //æ‰§è¡Œsqlè¯­å¥å¤±è´¥ï¼Œäº‹åŠ¡å›æ»š
                 trans.Rollback();
                 Console.WriteLine(ex);
                 return false;
